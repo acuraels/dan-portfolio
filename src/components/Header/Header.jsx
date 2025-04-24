@@ -56,7 +56,7 @@ const Header = () => {
                             <Link to="#my-projects">Последние проекты</Link>
                         </li>
                     </ul>
-                    <a className="btn-nav" href="/portfolio.pdf" download>Скачать резюме</a>
+                    <a className="btn-nav" href="/dan-portfolio/portfolio.pdf" download>Скачать резюме</a>
                 </nav>
             </div>
         </header>
