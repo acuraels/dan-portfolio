@@ -3,7 +3,7 @@ import HomePage from './pages/HomePage.jsx';
 
 function App() {
   return (
-    <BrowserRouter basename='/portfolio/'>
+    <BrowserRouter basename='/dan-portfolio/'>
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<HomePage />} />
