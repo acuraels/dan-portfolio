@@ -1,0 +1,629 @@
+/* Main Layout */
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #1e1e2e;
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .portfolio-container {
+        flex-direction: row;
+    }
+}
+
+/* Sidebar */
+.sidebar {
+    width: 100%;
+    padding: 2rem;
+    border-right: 1px solid #2a2a3c;
+    padding-top: 4rem;
+    background-color: #232339;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        width: 25%;
+        /* Заменяем на min-height вместо height */
+        min-height: 100vh;
+        /* Убираем overflow-y: auto */
+    }
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Profile */
+.profile-photo {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .profile-photo {
+        margin: 0;
+    }
+}
+
+.profile-info {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .profile-info {
+        text-align: left;
+    }
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.job-title {
+    background: linear-gradient(90deg, #A478E8 0%, #516CF7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+    margin-top: 0.25rem;
+    font-size: 1.125rem;
+}
+
+/* Quote */
+.quote-container {
+    margin-top: 1rem;
+    border-left: 2px solid #4b4b63;
+    padding-left: 1rem;
+}
+
+.quote {
+    color: #d1d1d6;
+    font-style: italic;
+}
+
+.quote-author {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-top: 0.25rem;
+}
+
+/* Contact Info */
+.contact-info {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #9ca3af;
+}
+
+.website-link {
+    color: #60a5fa;
+}
+
+.website-link:hover {
+    text-decoration: underline;
+}
+
+/* Social Links */
+.social-links {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.section-title {
+    color: #9ca3af;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.social-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.social-icon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Новые стили для социальных сетей */
+.telegram {
+    background-color: #0088cc;
+}
+
+.vk {
+    background-color: #4c75a3;
+}
+
+/* Старые стили оставлены для совместимости */
+.instagram {
+    background: linear-gradient(to top right, #8a3ab9, #e95950);
+}
+
+.dribbble {
+    background-color: #ea4c89;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+/* Languages */
+.languages {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.language-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.language-flag {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.language-name {
+    font-size: 0.875rem;
+}
+
+.language-level {
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+
+/* Main Content */
+.main-content {
+    width: 100%;
+    padding: 2rem;
+    padding-top: 4rem;
+    background-color: #232339;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        width: 75%;
+    }
+}
+
+/* Section Titles */
+.content-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.title-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #a78bfa;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+}
+
+/* Experience Section */
+.experience-section {
+    margin-bottom: 4rem;
+}
+
+.experience-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience-item {
+    display: flex;
+}
+
+.timeline {
+    margin-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #a78bfa;
+    border-radius: 50%;
+}
+
+.timeline-line {
+    width: 0.125rem;
+    height: 100%;
+    background-color: #4b4b63;
+    margin-top: 0.5rem;
+}
+
+.experience-content {
+    flex: 1;
+}
+
+.experience-header {
+    display: flex;
+    align-items: flex-start;
+}
+
+.experience-date {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-right: 1rem;
+    min-width: 11.25rem;
+}
+
+.experience-location {
+    display: flex;
+    align-items: center;
+    margin-top: 0.25rem;
+}
+
+.experience-location svg {
+    margin-right: 0.25rem;
+}
+
+.experience-company {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+/* Новые стили для логотипов компаний */
+.yandex {
+    background-color: #fc3f1d;
+    color: white;
+}
+
+.urfu {
+    background-color: #0a3069;
+    color: white;
+}
+
+.student-voice {
+    background-color: #6366f1;
+    color: white;
+}
+
+/* Старые стили оставлены для совместимости */
+.apple {
+    background-color: #000000;
+}
+
+.tesla {
+    background-color: #e82127;
+}
+
+.google {
+    background-color: #ffffff;
+}
+
+.vectornator {
+    background-color: #2a2a3c;
+}
+
+.job-position {
+    font-weight: 500;
+}
+
+.company-name {
+    color: #9ca3af;
+}
+
+.experience-description {
+    margin-top: 2rem;
+    color: #d1d1d6;
+    margin-left: 12.25rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+/* Projects Section */
+.projects-section {
+    margin-bottom: 4rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.project-card {
+    background-color: #353557;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.project-image {
+    height: 12rem;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.project-description {
+    color: #9ca3af;
+    margin-top: 0.5rem;
+}
+
+.project-link {
+    margin-top: 1rem;
+}
+
+.link {
+    color: #60a5fa;
+    display: flex;
+    align-items: center;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link svg {
+    margin-right: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+    .experience-description {
+        margin-right: 3rem;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .experience-header {
+        flex-direction: column;
+    }
+
+    .experience-description {
+        margin-left: 0;
+    }
+
+    .experience-date {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Education Section */
+.education-section {
+    margin-bottom: 4rem;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .education-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.education-card {
+    background-color: #353557;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.education-logo {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.html-academy {
+    background-color: #302683;
+    color: white;
+}
+
+.education-info {
+    width: 100%;
+}
+
+.education-title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.education-institution {
+    color: #a78bfa;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-date {
+    color: #9ca3af;
+    font-size: 0.75rem;
+}
+
+/* Skills Section */
+.skills-section {
+    margin-bottom: 4rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.skills-block {
+    background-color: #353557;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.skills-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5rem;
+}
+
+.skill-logo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.html {
+    background-color: #e34c26;
+    color: white;
+}
+
+.css {
+    background-color: #264de4;
+    color: white;
+}
+
+.js {
+    background-color: #f7df1e;
+    color: #000;
+}
+
+.ts {
+    background-color: #3178c6;
+    color: white;
+}
+
+.scss {
+    background-color: #cc6699;
+    color: white;
+}
+
+.react {
+    background-color: #61dafb;
+    color: #000;
+}
+
+.node {
+    background-color: #339933;
+    color: white;
+}
+
+.vite {
+    background-color: #646cff;
+    color: white;
+}
+
+.docker {
+    background-color: #2496ed;
+    color: white;
+}
+
+.git {
+    background-color: #f05032;
+    color: white;
+}
+
+.skill-name {
+    font-size: 0.875rem;
+    text-align: center;
+}
